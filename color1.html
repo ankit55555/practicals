@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1 align="center">2 buttons</h1>
+<form align="center">
+<input type="button" name="button1" value="changecolor" onMouseOver="f1()">
+<input type="button" name="button2" value="showmsg" onclick="msg()">
+</form>
+
+<script>
+function f1()
+{
+document.bgColor="red";
+window.setTimeout("f2()",1500);
+}
+function f2()
+{
+document.bgColor="green";
+window.setTimeout("f3()",1500);
+}
+
+function msg()
+ {
+  alert("Hello friends, this is message.");
+ }
+
+</script>
+
+
+</body>
+</html>
